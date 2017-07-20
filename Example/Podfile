@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XMLYSegmentBar_Example' do
+  pod 'XMLYSegmentBar', :path => '../'
+
+  target 'XMLYSegmentBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
