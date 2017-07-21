@@ -27,4 +27,18 @@
 }
 
 
+- (XMGSegmentBarConfig *(^)(UIcolor *))itemNC {
+    return ^(UIcolor * color) {
+        self.itemNormalColor = color;
+        return self;
+    }
+}
+
+- (XMGSegmentBarConfig *(^)(UIcolor *))itemSC {
+    return ^(UIcolor * color) {
+        self.itemSelectColor = color;
+        return self;
+    }
+}
+
 @end

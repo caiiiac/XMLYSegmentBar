@@ -14,7 +14,7 @@
 
 + (instancetype)defaultConfig;
 
-/** 北京颜色 */
+/** 背景颜色 */
 @property (nonatomic, strong) UIColor *segmentBarBackColor;
 
 
@@ -27,6 +27,8 @@
 @property (nonatomic, assign) CGFloat indicatorHeight;
 @property (nonatomic, assign) CGFloat indicatorExtraW;
 
+//链式编程实践
+@property (nonatomic, copy, readonly) XMGSegmentBarConfig *(^itemNC) (UIColor *color);
 
-
+@property (nonatomic, copy, readonly) XMGSegmentBarConfig *(^itemSC) (UIColor *color);
 @end
